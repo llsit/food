@@ -1,11 +1,12 @@
 var express = require('express');
 var router = express.Router();
 var mysql = require('mysql')
+const db = require('../db')
 var connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'food'
+    host: db.database.host,
+    user: db.database.user,
+    password: db.database.password,
+    database: db.database.db
 });
 
 router.post('/', function (req, res) {
