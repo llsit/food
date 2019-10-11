@@ -14,6 +14,7 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
+    "mixin-deep": "^2.0.1",
     "mysql": "^2.16.0",
     "nodemon": "^1.18.7",
     "npm-upgrade": "^2.0.2",
